@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="path/to/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <title>Login</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div class="layer">
+                <img style="float: left; margin-top: 5px; margin-bottom: 9px;z-index: -1;"
+                src="/images/icons/logo used in header.svg" alt="">
+            </div>     
+        </div>
+    </header>
+
+    <div class="container">
+       
+        <img src="/images/icons/back.svg" alt="">
+        <h2>Log in with Quantum</h2>
+
+        <div class="radio-item">
+            <input type="radio" id="ritema" name="ritem" value="ropt1">
+            <label for="ritema">District</label>
+        </div>
+
+        <div class="radio-item">
+            <input type="radio" id="ritemb" name="ritem" value="ropt2">
+            <label for="ritemb">Independant school</label>
+        </div>
+
+        <div class="form">
+            <div class="datalist">
+                <h6 style="margin: 0px; margin-bottom: 5px;">State*</h6>
+
+                <input list="browsers" class="datalist" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Alabama">
+                    <option value="Alabama school District">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <h6 style="margin: 0px; margin-bottom: 5px;margin-top: 10px;">District*</h6>
+                <input list="browsers" class="datalist" name="browser" id="browser1">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </div>
+            <form method="post">
+                <p>
+                    <input type="text" style="font-weight: bold; font-size: 16px;" value="Username/Email ID*"
+                        name="username" id="username">
+                    <a href="#">
+                        <p> FORGOT USERNAME?</p>
+                    </a>
+                </p>
+                <p>
+
+                    <input value="Password*" style="font-weight: bold; font-size: 16px;" name="password"
+                        id="password" />
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    
+                    <a href="#" class="right">
+                        <p> FORGOT PASSWORD</p>
+                    </a>
+                </p>
+
+                <label class="check">Remember Me
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <div class="btn">
+                    <button type="submit" style="box-shadow: 1px 2px 4px #888888;">
+                        <h4>LOG IN</h4>
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="contact">
+
+        <a href="#">About </a>
+        <span style="margin-top: 8px;color: #0000001F">&#124</span>
+        <a href="#">Contact</a>
+
+    </div>
+
+    <footer class="footer">
+        <img src="/images/icons/logo used in header.svg" alt="Company logo">
+
+        <p> &#124 &nbsp; Copyright @ 2020-2021 Zeus System Pvt.Ltd. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

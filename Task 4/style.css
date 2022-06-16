@@ -1,0 +1,320 @@
+*{
+  margin: 0px;
+  font-family: 'Quicksand';
+}
+body{
+    background-color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.header{
+    background-color: #25313F;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+    border-bottom: 2px solid #3AC7EC;
+    margin: 0px;
+}
+.left {
+    display: block;
+    left: 60px;
+    top: 20px;  
+    color: white;
+}
+.left img {
+    width: 30px;
+    margin-left: 15px;
+    -webkit-transform: rotate(-21deg);
+    filter: invert(100%);
+}
+
+.left div {
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    line-height: 15px;
+    font-size: 20px;
+    
+}
+
+.container{
+    width: 45%;
+    height: 550px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 4px solid #3AC7EC;
+    margin: 50px auto;
+    background-color: white;
+}
+.container img{
+  position: relative;
+  top: 35px;
+}
+.container >*{
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.container h2{
+    position: relative;
+    bottom: 21px;
+    margin-top: 10px;
+    text-align: center;
+}
+.font{
+    position: relative;
+    top: 20px;
+    
+    color: #1F7A54;
+}
+
+.radio-item {
+    display: inline-block;
+    position: relative;
+    /* padding: 0; */
+  
+    margin-right: 20px;
+  }
+  
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+  
+  .radio-item label {
+    color: #666;
+    font-weight:bold;
+  }
+  
+  .radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    
+    margin: 0 5px 0 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 11px;
+    border: 2px solid green;
+    background-color: transparent;
+  }
+  
+  .radio-item input[type=radio]:checked + label:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    content: " ";
+    display: block;
+    background: green;
+  }
+
+  .firstint{
+    display: block;
+    border-bottom: 1px solid #e4dddd;
+    /* color: red; */
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+  .secondint{
+    display: block;
+    border-bottom: 1px solid #e4dddd;
+    /* color: red; */
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+
+.firstint img{
+    position: absolute;
+    left: 72%;
+    top: 39%;
+}
+
+.secondint img{
+    position: absolute;
+    left: 72%;
+    top: 48%;
+}
+
+.thirdint{
+  position: absolute;
+  left: 71%;
+  top: 58%;
+}
+h5{
+  color: #222222;
+}
+h6{
+  color: #666666;
+}
+    
+.form input{
+  width: 100%;
+  border: none;
+  margin-top: 30px;
+  border-bottom: 1px solid #e4dddd;
+}
+.container a{
+  display: flex;
+  float: right;;
+  color: #147243;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+form i {
+  margin-left: -20px;
+  cursor: pointer;
+}
+
+
+footer{
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #050505;
+  background-color: #E0E1E1;
+}
+footer img{
+  margin-right: 10px;
+}
+
+
+button { 
+  background-color: #3FD28B; 
+  width: 50%;
+   color: #1F2834; 
+   padding: 15px; 
+   border: none; 
+   cursor: pointer; 
+  } 
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    
+  }
+
+  .check {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check input:checked ~ .checkmark {
+    background-color: #1F7A54;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    }
+    
+  .contact a{
+    margin: 10px;
+    text-decoration: none;
+    color: #1F7A54;
+  }
+
+  .datalist{
+    margin-top: 20px;
+
+  }
+  .datalist input{
+    margin: 0px;
+  }
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #25313F;
+    /* background-image: url(/images/header\ 1.svg)no-repeat transparent 0% 0%; */
+    /* opacity: 0.8;
+    mix-blend-mode: overlay; */
+  }
+  .layer img{
+    /* background-color: #212c38;
+    z-index: -1;
+    opacity: 0.9; */
+  }
+  .topnav img{
+    float: right;
+    margin: 13px 20px;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 100;
+}
+
+.datalist{
+  border: none;
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+}

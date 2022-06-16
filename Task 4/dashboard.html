@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="phone.css">
+
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+
+            <img style="float: left; margin-top: 5px; margin-bottom: 9px;" src="/images/icons/logo used in header.svg"
+                alt="Head Logo">
+
+
+            <div class="img1">
+                <img src="/images/icons/account_circle.svg" alt="Circular Image">
+
+                <div class="icons1" style="background-color: white;">
+                    <p style="font-size: 12px;margin-left: 4px;margin-bottom: 5px;">T</p>
+                </div>
+
+                <img src="/images/icons/announcements.svg" alt="announcement logo">
+
+                <div class="icons1">
+                    <p style="font-size: 12px;margin-left: 4px;color: white;margin-bottom: 5px;">2</p>
+                </div>
+
+                <img src="/images/icons/alerts.svg" alt="alert logo">
+
+                <div class="icons1">
+                    <p style="font-size: 12px;margin-left: 4px;color: white;margin-bottom: 5px;">2</p>
+                </div>
+            </div>
+
+            <div style="float: right;">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            <a href="#news">ADMIN</a>
+            <a href="#about">REPORTS</a>
+            <a href="#about">USERS</a>
+            <a href="#about">CONTACT</a>
+            <a href="#about">DASHBOARD</a>
+
+        </div>
+    </header>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="column" style="border-bottom: 4px solid #222222;">
+                <img src="/images/icons/courses.svg" alt="">
+                <p><b>4</b> Courses</p>
+            </div>
+            <div class="column">
+                <img src="/images/icons/classes.svg" alt="">
+                <p><b>4</b> Classes</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <div style="float: left; font-size: 12px;">
+                Showing 4 of 4 courses
+            </div>
+
+            <div style="float: right;display: flex;">
+                
+                <div style="margin-right:10px; font-size: 12px;">
+                    Sort By:
+                </div>
+                <input list="browsers" name="browser" id="browser4" style="margin-right:10px;">
+                <datalist id="browsers">
+                    <option value="Course Name">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <img src="/images/icons/sort.svg" alt="Up Arrow">
+            </div>
+
+        </div>
+
+        <hr>
+
+        <section>
+            <div id="app"></div>
+        </section>
+    </div>
+
+    <div class="contact">
+
+        <a href="#">About </a>
+        <span style="margin-top: 8px;color: #0000001F">&#124</span>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <footer class="footer">
+
+        <img src="/images/icons/logo used in footer.svg" alt="Company logo">
+        <p style="font-size: 14px;"> &#124 &nbsp; Copyright @ 2020-2021 Zeus System Pvt.Ltd. All rights reserved.</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
