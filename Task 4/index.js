@@ -90,13 +90,15 @@ const CourseData = [
 
                             <p id="para2"><b>${course.units}</b> Units <b>${course.lessons}</b>  Lessons <b>${course.topics}</b> Topics </p>
 
-                            <input list="browsers3" name="browser" class="datalist" id="browser1">
-                            <datalist id="browsers3">
-                                <option value="Mr. Frank's Class B">
-                                <option value="Mr. Frank's Class A">
-                                <option value="All Classes">
-                                <option value="No Classes">
-                            </datalist>
+                            <select name="cars" class="MainDatalist">
+                                <option value="Mr. Frank's Class B">Mr. Frank's Class B</option>
+                                <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+                                <option value="All Classes">All Classes</option>
+                                <option value="No Classes">No Classes</option>
+                                
+                          </select>
+
+                            
                             
                             <p id="para3"> ${course.students === null ? '' : course.students+' Students <span class="grade">&#124</span>'}   ${course.duration === null ? '': course.duration} </p> 
             </div>

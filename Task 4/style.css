@@ -40,7 +40,7 @@ body{
 }
 
 .container{
-    width: 45%;
+    width: 38%;
     height: 550px;
     padding-left: 20px;
     padding-right: 20px;
@@ -74,7 +74,11 @@ body{
     position: relative;
     /* padding: 0; */
   
-    margin-right: 20px;
+    margin-right: 40px;
+  }
+
+  input[type="radio"]+label {
+    cursor: pointer;
   }
   
   .radio-item input[type='radio'] {
@@ -198,7 +202,7 @@ button {
   .btn{
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 16px;
     
   }
 
@@ -297,6 +301,7 @@ button {
     /* background-image: url(/images/header\ 1.svg)no-repeat transparent 0% 0%; */
     /* opacity: 0.8;
     mix-blend-mode: overlay; */
+    border-bottom: 2px solid #31B9E4;
   }
   .layer img{
     /* background-color: #212c38;
@@ -317,4 +322,25 @@ input::-webkit-calendar-picker-indicator {
   color: #222222;
   font-size: 16px;
   font-weight: bold;
+}
+
+.cars{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e4dddd;
+  /* margin-top: 10px; */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: -2px;
+  padding: 3px;
+  padding-left: 0px;
 }

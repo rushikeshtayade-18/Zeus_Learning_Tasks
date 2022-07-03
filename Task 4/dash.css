@@ -333,3 +333,49 @@ input::-webkit-calendar-picker-indicator {
   color: #D80000;
   font-size: 12px;
 }
+
+.active{
+  border-bottom: 3px solid rgb(250, 250, 250);
+}
+
+.cars{
+  border: none;
+  border-bottom: 1px solid #c9c2c2;
+  height: 27px;
+  width: 150px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #EEEEEE;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 2px;
+  /* font-size: 16px; */
+  /* padding: 3px; */
+  padding-left: 0px;  
+}
+.MainDatalist{
+  border: none;
+  border-bottom: 1px solid #c9c2c2;
+  height: 27px;
+  width: 100%;
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+  /* background-color: #EEEEEE; */
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+select option{
+  font-size: 16px;
+}
