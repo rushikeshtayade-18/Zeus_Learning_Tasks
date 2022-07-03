@@ -3,10 +3,7 @@
     font-family: 'Quicksand';
     font-size: 22px;
 }
-body{
-    background-color: #EEEEEE;
 
-}
 .navbar{
     background-color: #25313F;
   }
@@ -111,40 +108,7 @@ footer{
     margin-right: 10px;
   }
 
-  .topnav {
-    overflow: hidden;
-    background-color: #25313F;
-    
-  }
   
-
-  .topnav a {
-    float: right;
-    display: block;
-    color: #3FD28B;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    color: #FFFFFF;
-    border-bottom: 3px solid #FFFFFF;
-  }
-  
-  .topnav a.active {
-    color: white;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-
-  .topnav img{
-      float: right;
-      margin: 13px 15px;
-  }
 
 
   /*   Card Start */
@@ -306,21 +270,7 @@ input::-webkit-calendar-picker-indicator {
   flex-wrap: wrap;
   justify-content:space-between;
 }
-#para1{
-  color: #666666; 
-  
-  font-size:12px; 
-  margin-bottom: 5px;
-}
 
-#para2{
-  color: #666666;
-  font-size:12px;
-}
-#para3{
-  color: #666666;
-  font-size:12px;
-}
 #para2 b{
   font-size:12px;
 }
@@ -363,19 +313,6 @@ select {
   /* padding: 3px; */
   padding-left: 0px;  
 }
-.MainDatalist{
-  border: none;
-  border-bottom: 1px solid #c9c2c2;
-  height: 27px;
-  width: 100%;
-  color: #222222;
-  font-size: 16px;
-  font-weight: bold;
-  /* background-color: #EEEEEE; */
-  margin-top: -10px;
-  margin-right: 10px;
-}
 
-select option{
-  font-size: 16px;
-}
+
+

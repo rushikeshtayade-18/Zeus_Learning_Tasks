@@ -1,0 +1,44 @@
+@import './topnav.scss';
+
+$paracolor : #666666;
+
+body{
+    background-color: #EEEEEE;
+
+}
+
+.MainDatalist{
+    border: none;
+    border-bottom: 1px solid #c9c2c2;
+    height: 27px;
+    width: 100%;
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+    /* background-color: #EEEEEE; */
+    margin-top: -10px;
+    margin-right: 10px;
+  }
+
+select{
+
+   option{
+    font-size: 16px;
+  }
+}
+
+  #para1{
+    color: $paracolor; 
+    
+    font-size:12px; 
+    margin-bottom: 5px;
+  }
+  
+  #para2{
+    color: $paracolor;
+    font-size:12px;
+  }
+  #para3{
+    color: $paracolor;
+    font-size:12px;
+  }
