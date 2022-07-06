@@ -20,7 +20,9 @@
   @media screen and (max-width: 1000px) {
 
     .topnav a:not(:first-child) {display: none;}
-    
+    .top{
+      margin-top: 50px;
+    }
     .topnav a.icon {
    
       float: right;   
