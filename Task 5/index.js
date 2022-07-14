@@ -28,10 +28,10 @@ ButtonNotification.addEventListener('mouseover', () =>{
     }
 
 })
-ButtonNotification.addEventListener('mouseout', ()=>{
+ButtonNotification.addEventListener('mouseout', ()=>{//
     notificationsSpan.style.visibility = 'visible';
     notificationsPath.setAttribute('fill', '#3fd28b');
-    HowerNotification.style.display = 'none'
+    HowerNotification.style.display = 'none' 
     notificationsSpan.style.display = 'block';
     ShowallNotification.style.display = 'none';
 })
@@ -133,7 +133,7 @@ ButtonAlert.addEventListener('mouseout', ()=>{
     ShowAlert.style.display = 'none';
     SpanAlert.style.visibility = 'visible';
     PathAlert.setAttribute('fill', '#3fd28b');
-    HowerAlert.style.display = 'none'
+    HowerAlert.style.display = 'none';
     SpanAlert.style.display = 'block';
     // nbottomFixed.style.display = 'none';
 })
@@ -208,6 +208,7 @@ const hamburgerMenu = document.querySelector('.hamburger');
 const hamburgerPath = document.querySelector('.hamburger svg path:nth-child(2)');
 const hamburgerDetails = document.querySelector('.headerdata');
 const ulHeadings = document.getElementsByClassName('ul-heading');
+const contents = document.getElementsByClassName('contentlist');
 // hamburgerDetails.style.display = 'block'
 hamburgerMenu.addEventListener('mouseover', ()=>{
     if(hamburgerPath.getAttribute('fill') == '#3fd28b')
@@ -223,37 +224,75 @@ hamburgerMenu.addEventListener('mouseout', ()=>{
 })
 
 
-const contents = document.getElementsByClassName('contentlist');
+
 
 ulHeadings[0].addEventListener('click', ()=>{
     if(contents[0].style.display != 'none'){
-        contents[0].style.display = 'none'
+        contents[0].style.display = 'none';
+        ulHeadings[0].style.backgroundColor = 'white';
+        document.querySelector('.rotate1').style.transform = 'rotate(90deg)';
+        document.querySelector('.rotate1').style.right = '0px';
     }else{
-        contents[0].style.display = 'block'
+        contents[0].style.display = 'block';
+        contents[0].style.backgroundColor = '#F3F3F3';
+        ulHeadings[0].style.backgroundColor = '#F3F3F3';
+        document.querySelector('.rotate1').style.transform = 'rotate(270deg)';
+        document.querySelector('.rotate1').style.right = '6px';
+        
+
     }
 });
 
 ulHeadings[1].addEventListener('click', ()=>{
     if(contents[1].style.display != 'none'){
-        contents[1].style.display = 'none'
+        contents[1].style.display = 'none';
+        ulHeadings[1].style.backgroundColor = 'white';
+        document.querySelector('.rotate2').style.transform = 'rotate(90deg)';
+        document.querySelector('.rotate2').style.right = '0px';
     }else{
-        contents[1].style.display = 'block'
+        contents[1].style.display = 'block';
+        contents[1].style.backgroundColor = '#F3F3F3';
+        ulHeadings[1].style.backgroundColor = '#F3F3F3';
+        document.querySelector('.rotate2').style.transform = 'rotate(270deg)';
+        document.querySelector('.rotate2').style.right = '6px';
     }
 });
 
 ulHeadings[2].addEventListener('click', ()=>{
     if(contents[2].style.display != 'none'){
-        contents[2].style.display = 'none'
+        contents[2].style.display = 'none';
+        ulHeadings[2].style.backgroundColor = 'white';
+        document.querySelector('.rotate3').style.transform = 'rotate(90deg)';
+        document.querySelector('.rotate3').style.right = '0px';
     }else{
-        contents[2].style.display = 'block'
+        contents[2].style.display = 'block';
+        contents[2].style.backgroundColor = '#F3F3F3';;
+        ulHeadings[2].style.backgroundColor = '#F3F3F3';
+        document.querySelector('.rotate3').style.transform = 'rotate(270deg)';
+        document.querySelector('.rotate3').style.right = '6px';
     }
 });
 
 ulHeadings[3].addEventListener('click', ()=>{
     if(contents[3].style.display != 'none'){
-        contents[3].style.display = 'none'
+        contents[3].style.display = 'none';
+        ulHeadings[3].style.backgroundColor = 'white';
+        document.querySelector('.rotate4').style.transform = 'rotate(90deg)';
+        document.querySelector('.rotate4').style.right = '0px';
     }else{
-        contents[3].style.display = 'block'
+        contents[3].style.display = 'block';
+        contents[3].style.backgroundColor = '#F3F3F3';
+        ulHeadings[3].style.backgroundColor = '#F3F3F3';
+        document.querySelector('.rotate4').style.transform = 'rotate(270deg)';
+        document.querySelector('.rotate4').style.right = '6px';
     }
 });
 
+/* Hanburger Menu Content */
+
+// const content = document.querySelector('.notelogo');
+
+// function rotateElem() {
+//     document.querySelector('.rotate').style.transform
+//                = 'rotate(180deg)';
+// }

@@ -1,11 +1,31 @@
+/* Common CSS Starts */
+
+@font-face {
+    font-family: QuicksandBold;
+    src: url(/quicksand/static/Quicksand-Bold.ttf);
+}
+@font-face {
+    font-family: QuicksandLight;
+    src: url(/quicksand/static/Quicksand-Light.ttf);
+}
 @font-face {
     font-family: QuicksandMedium;
-    src: url(../assets/quicksand/static/Quicksand-Medium.ttf);
+    src: url(/quicksand/static/Quicksand-Medium.ttf);
 }
-*{
+@font-face {
+    font-family: QuicksandRegular;
+    src: url(/quicksand/static/Quicksand-Regular.ttf);
+}
+@font-face {
+    font-family: QuicksandSemibold;
+    src: url(/quicksand/static/Quicksand-SemiBold.ttf);
+}
+
+/* ------------------------------------------------------------------ */
+/* *{
    
     font-family: 'Quicksand';
-  }
+  } */
 /* ------------------------------------------------------------------ */
 /* width */
 ::-webkit-scrollbar {
@@ -34,7 +54,7 @@ html, body{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    /* font-family: 'Quicksand'; */
+    font-family: QuicksandMedium;
 }
 
 
@@ -58,7 +78,7 @@ html, body{
 
 .navigation > *{
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
     color: #3FD28B;
     margin: 0 16px;
     justify-content: center;
@@ -86,7 +106,7 @@ html, body{
 }
 
 .note{
-    display: none;
+    display: none; /* */
     width: 315px;
     max-height:582px;
     border-radius: 2px;
@@ -98,6 +118,7 @@ html, body{
     background: #ffffff 0% 0% no-repeat padding-box;
     overflow-y: auto;
     cursor: pointer;
+    
 }
 .alert{
     display: none;
@@ -111,11 +132,13 @@ html, body{
     right: 90px;
     background: #ffffff 0% 0% no-repeat padding-box;
     overflow-y: auto;
+    
 }
 
 .notelogo {
     padding-bottom: 25px;
     margin-top: 31px;
+
 }
 .alertlogo {
     padding-bottom: 25px;
@@ -148,14 +171,20 @@ a{
 .alert-item h4{
     margin: 0;
     color: black;
-    font-size: 15px;
-    
+    font-size: 14px;
+    font-weight: normal;
 }
+
 .alert-heading, .alert-details{
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 12px;
     color: black;
+}
+.alert-details{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 5px;
 }
 .alert-from{
     display: flex;
@@ -168,7 +197,7 @@ a{
     margin: 0;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 12px;
     padding: 0;
 }
 .adetails ul, .ndetails ul{
@@ -179,6 +208,8 @@ a{
 .alert-item h4{
     margin: 0;
     color: black;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .grey{
@@ -193,19 +224,32 @@ a{
     align-items: center;
     margin: 0;
     padding: 0;
+    padding-right: 10px;
 }
 
 .font15{
-    font-size: 14px;
+    font-size: 12px;
+    padding-left: 10px;
 }
 
-.note ul{
-    list-style: none;
+/* .note a{
+    border: 2px solid red;
+    margin-top: 0px;
+    padding-top: 0px;
+    list-style-type: none;
+} */
+.note ul li{
+
+     /* padding: 2px; */
+     margin: 0px !important;
+     border-bottom: 1px solid #2222221F;
+    list-style-type: none;
+    
 }
 
 .note ul li{
     min-height: 114px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 16px;
 }
 .alert ul{
@@ -214,7 +258,9 @@ a{
 
 .alert ul li{
     min-height: 114px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    margin: 0px !important;
+    border-bottom: 1px solid #2222221F;
     margin: 16px;
 }
 
@@ -238,6 +284,7 @@ a{
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    box-shadow: 0px 0 5px -2px #888;
 }
 
 .bottom-fixed{
@@ -255,10 +302,16 @@ a{
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    box-shadow: 0px 0 5px -2px #888;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .bottom-fixed a, .nbottom-fixed a{
     color: #1F7A54;
+    
 }
  .note ul li{
     min-height: 20px;
@@ -309,9 +362,19 @@ svg:focus{
 }
 
 .headerdata ul{
-    margin: 16px 24px 0 16px;
+    /* margin: 16px 24px 0 16px; */
     padding: 0;
     list-style-type: none;
+}
+
+/* .headerdata li a{
+    margin-left: 15px;
+    margin-bottom: 0px;
+} */
+.ul-title
+{
+    margin-left: 15px;
+    padding-top: 10px;
 }
 a{
     text-decoration: none;
@@ -327,14 +390,37 @@ a{
 .ul-heading {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .contentlist{
     display: none;
+    /* position: absolute; */
+}
+.contentlist li:nth-child(1){
+    padding-top: 30px;
+    padding-left: 30px;
+ 
+}
+.contentlist li:not(:nth-child(1)){
+    padding-left: 30px;
 }
 
 .dnd{
     background-color: #FFFFEE;
+}
+
+.rotate1, .rotate2, .rotate3, .rotate4{
+    position: relative;
+    font-size: 20px;
+}
+
+.alert .alert-from {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.alert .alerts-attatchments{
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 1000px) 
@@ -359,4 +445,5 @@ a{
     transform: rotate(90deg);
     width: 12px;
     height: 24px;
+        margin-right: 10px;
 }
